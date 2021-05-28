@@ -14,10 +14,11 @@ import {HomeScreen} from './src/HomeScreen'
 import {NewsScreen} from './src/NewsScreen'
 import {ProfileScreen} from './src/ProfileScreen'
 import { LogInScreen} from './src/AuthScreen'
+import { getToken } from './src/Token';
 
 
 
-const userTokenValue = null;
+const userTokenValue = getToken();
 
 const Tabs = createBottomTabNavigator();
 const ProfileStack = createStackNavigator();
